@@ -1,72 +1,19 @@
-# 📚 Raspador de Livros
+# Raspagem Web Automatizada — Books to Scrape
 
+## Objetivo:
+Criar uma ferramenta automatizada para extrair informações de livros (título, preço e disponibilidade) do site Books to Scrape, salvando os dados em planilha CSV de forma simples e acessível por interface gráfica.
 
-Este projeto é um web scraper que coleta informações de livros no site Books to Scrape
- e gera uma tabela em CSV com:
+## Principais etapas realizadas:
 
-📖 Título do livro
+- Rastreamento: Acesso automático a todas as 50 páginas do site por meio da biblioteca Requests.
 
-💲 Preço
+- Extração de dados: Utilização do BeautifulSoup para identificar e capturar elementos HTML correspondentes aos títulos, preços e status de disponibilidade.
 
-✅ Disponibilidade
+- Armazenamento estruturado: Organização dos dados em um DataFrame Pandas, com exportação para o arquivo Tabela_de_livros.csv.
 
-O programa foi feito em Python, com uma interface gráfica simples em Tkinter, para que qualquer pessoa consiga rodar com apenas um clique.
+- Interface gráfica: Criação de uma interface simples com Tkinter, permitindo que o usuário execute o scraping com apenas um clique.
 
-⚙️ Como funciona
+- Compatibilidade ampliada: Sistema configurado para salvar o arquivo automaticamente na mesma pasta do script ou executável (.exe), facilitando o uso em qualquer ambiente.
 
-Faz o rastreamento das 50 páginas do site.
-
-Extrai título, preço e disponibilidade de cada livro.
-
-Armazena tudo em uma planilha .csv chamada Tabela_de_livros.csv.
-
-Mostra uma mensagem de sucesso indicando onde o arquivo foi salvo.
-
-📦 Tecnologias usadas
-
-Requests
- → Requisições HTTP
-
-BeautifulSoup
- → Extração de dados do HTML
-
-Pandas
- → Manipulação de dados e geração de CSV
-
-Tkinter
- → Interface gráfica
-
- 🎯 Objetivo
-
-Projeto feito para treino de raspagem de dados (web scraping) e entrega em formato executável para cliente.
-
-PyInstaller
- → Transformar o script em .exe
-
- ▶️ Como rodar o projeto
-1. Clone o repositório
-git clone https://github.com/seu-usuario/Raspagem-de-site--WebScraping.git
-cd Raspagem-de-site--WebScraping
-
-1. Instale as dependências
-pip install requests beautifulsoup4 pandas tk pyinstaller
-
-2. Rode direto pelo Python
-python app.py
-
-3. (Opcional) Gerar um .exe
-
-Para entregar o programa sem precisar instalar Python:
-
-python -m PyInstaller --onefile --noconsole app.py
-
-
-O executável será criado na pasta:
-
-dist/app.exe
-
-📂 Saída
-
-O programa gera automaticamente um arquivo:
-
-Tabela_de_livros.csv
+## Resumo:
+Aplicação de web scraping com Python, combinando Requests, BeautifulSoup, Pandas e Tkinter para oferecer uma solução completa, prática e interativa de coleta automatizada de dados. Ideal para demonstrações de automação e aprendizado em raspagem web.
